@@ -1,0 +1,55 @@
+<!-- 表单用于收集用户数据 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单域 -->
+    <form action="url地址" method="提交方式" name="">
+    <!-- 提交方式只有get或post -->
+        <!-- 表单元素、表单控间 -->
+         <input type="text" value="开心"><br>
+         <!-- text 文本框  password  密码框 -->
+
+        <!-- 单选按钮，多选一，其name属性必须一致，且必须有name值，value值不一样 -->
+        男<input type="radio" name="性别" value="男">
+        女<input type="radio" name="性别" value="女"><br>
+
+        <!-- 多选按钮，多选多，其name属性必须一致，value值不一样 -->
+        吃饭<input type="checkbox" name="爱好" value="吃饭"><br>
+        睡觉<input type="checkbox" name="爱好" value="睡觉"><br>
+        打豆豆<input type="checkbox" name="爱好" value="打豆豆"><br>
+
+        <!-- 单选按钮和复选按钮可以用checked，当页面打开时就默认选上 -->
+        开心<input type="radio" name="情绪" value="开心" checked="checked"><br>
+        不开心<input type="radio" name="情绪" value="不开心" ><br>
+        <!-- 单选只能有一个checked -->
+
+        <!-- maxlength是长度属性，在后面加入最大长度值 -->
+        密码<input type="password" maxlength="6"><br>
+        <input type="submit" value="提交注册"><br>
+        <input type="reset" value="重新设置"><br>
+        <input type="button" value="上传"><br>
+        <input type="file" value="上传头像"><br>
+
+
+
+    </form>
+
+</body>
+</html>
+
+<!-- 总结，表单元素<input>的属性，type name value checked maxlength -->
+ <!-- value 是用来展示字体的 -->
+  <!-- type的属性值：text、radio、checkbox、
+                   submit（提交按钮，点击提交即送到后台）
+                   reset（文字默认是重置，可自己用value来设置）
+                   button(普通按钮，默认是无，自己用value来设置，不上传数据给后台)
+                   file（上传文件）
+
+    -->
+
+
